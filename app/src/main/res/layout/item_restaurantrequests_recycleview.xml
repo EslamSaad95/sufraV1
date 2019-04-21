@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/cardview_borders"
+    android:layout_marginTop="@dimen/dimen_MM">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RootLayout"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:background="@drawable/cardview_borders"
+            android:layout_height="80dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_person"
+            />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user name"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/Item_RestaurantRequestsRV_ClientNameTv"
+                    android:textSize="@dimen/txt_size_mm"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dimen_MMM"
+                    android:text="RequestNum :"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/txt_size_s"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/Item_RestaurantRequestsRv_RequestNumTv"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_S"
+                android:background="@color/gray"
+                android:text="Price :"
+                android:id="@+id/Item_RestaurantRequestsRv_PriceTv"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_S"
+                android:background="@color/gray"
+                android:text="Delivery Commision :"
+                android:id="@+id/Item_RestaurantRequestsRv_DeliveryCommisonTv"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_S"
+                android:background="@color/gray"
+                android:text="Total :"
+                android:id="@+id/Item_RestaurantRequestsRv_TotalTv"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_S"
+                android:background="@android:color/darker_gray"
+                android:text="Address :"
+                android:id="@+id/Item_RestaurantRequestsRv_AddressTv"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/RootLayout"
+        android:id="@+id/Item_RestaurantRequestsRv_ButtonLayout"
+        android:layout_marginTop="@dimen/dimen_MM">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="@dimen/dimen_L"
+            android:id="@+id/Item_RestaurantRequestsRv_CallBtn"
+            android:background="@android:color/holo_red_dark"
+            android:text="01002003434"
+            android:textColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:drawableStart="@drawable/ic_call"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="@dimen/dimen_L"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:paddingStart="@dimen/dimen_MMM"
+            android:paddingEnd="@dimen/dimen_MM"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+android:layout_toEndOf="@id/Item_RestaurantRequestsRv_CallBtn"
+            android:drawableStart="@drawable/ic_like"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/Item_RestaurantRequestsRV_AcceptBtn"
+            android:text="@string/accept"/>
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="@dimen/dimen_L"
+            android:id="@+id/Item_RestaurantRequestsRv_RefusedBtn"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:text="@string/refuse"
+            android:paddingStart="@dimen/dimen_MMM"
+            android:paddingEnd="@dimen/dimen_MM"
+            android:drawableStart="@drawable/ic_refuse"
+            android:layout_toEndOf="@id/Item_RestaurantRequestsRV_AcceptBtn"
+            android:textColor="@android:color/white"
+            android:background="@color/black"/>
+    </RelativeLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/Item_RestaurantRequestsRv_ButtonLayout"
+         android:layout_marginTop="@dimen/dimen_MMM"
+         android:text="الطلب مكتمل"
+         android:textColor="@color/white"
+         android:visibility="gone"
+         android:id="@+id/Item_RestaurantRequestsRv_CompletedOrder_Tv"
+         android:background="@color/colorAccent"
+         android:textAlignment="center"/>
+
+
+</RelativeLayout>

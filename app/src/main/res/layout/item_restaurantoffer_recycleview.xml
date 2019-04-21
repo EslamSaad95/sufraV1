@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="100dp"
+    android:background="@drawable/cardview_borders"
+    android:layout_marginTop="@dimen/dimen_S">
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mode="same_level"
+        android:id="@+id/Item_RestaurantMenuRv_SwipLayout"
+        app:dragEdge="left">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Item_RestaurantOfferRv_SecondaryLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/dimen_MM"
+                android:layout_marginEnd="@dimen/dimen_MM">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Item_RestaurantOfferRv_Swap_OfferNameTv"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/txt_size_mmm"
+                        android:textDirection="ltr"
+                        android:text="Title"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Item_RestaurantOfferRv_Swap_RestNameTv"
+                        android:textStyle="bold"
+                        android:textDirection="ltr"
+                        android:text="Restaurant"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Item_RestaurantOfferRv_Swap_OfferDateEnd"
+                        android:text="datein"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_MMM"
+                    android:gravity="end"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_XL"
+                        style="@style/GreenButton"
+                        android:text="Edit"
+                        android:id="@+id/Item_RestaurantOfferRv_Swip_EditBtn"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_XXL"
+                        style="@style/GreenButton"
+                        android:id="@+id/Item_RestaurantOfferRv_Swip_DeleteBtn"
+                        android:layout_marginTop="@dimen/dimen_MMM"
+                        android:background="@android:color/holo_red_dark"
+                        android:text="delete"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Item_RestaurantOfferRv_MainLayout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_MM"
+                android:layout_marginEnd="@dimen/dimen_MM"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="@dimen/dimen_MMM"
+                    android:layout_marginBottom="@dimen/dimen_MMM"
+                    android:id="@+id/Item_RestaurantOffersRv_OfferIv"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_MM"
+                    android:layout_marginTop="@dimen/dimen_MMM"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="offer title"
+                        android:id="@+id/Item_RestaurantOfferRv_offerNameTv"
+                        android:textSize="@dimen/txt_size_mmm"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="restaurant name"
+                        android:id="@+id/Item_RestaurantOfferRv_RestaurantNameTv"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="end in"
+                        android:id="@+id/Item_RestaurantOfferRv_OfferEndInTv"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="price"
+                        android:id="@+id/Item_RestaurantOfferRv_PriceTv"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+</RelativeLayout>

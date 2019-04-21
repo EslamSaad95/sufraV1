@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/dimen_XL"
+    android:layout_marginBottom="@dimen/dimen_M"
+    android:paddingEnd="@dimen/dimen_M" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="@dimen/dimen_XXXL"
+        android:layout_height="@dimen/dimen_XXXL"
+        android:layout_marginTop="@dimen/dimen_M"
+        android:layout_gravity="center"
+        android:id="@+id/CkDb_alterdialouge_Iv"
+        android:src="@drawable/ic_error"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@id/CkDb_alterdialouge_Iv"
+        android:layout_marginTop="@dimen/dimen_M"
+        android:textSize="@dimen/txt_size_mm"
+        android:text="You Should Select Items From One Restaurant .Do you want to empty your cart and select other restaurant ?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_M"
+        android:layout_marginBottom="@dimen/dimen_M"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:text="Yes"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:id="@+id/CkDb_alterdialouge_yesBtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/CkDb_alterdialouge_NoBtn"
+        style="@style/GreenButton"
+        android:text="no"/>
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

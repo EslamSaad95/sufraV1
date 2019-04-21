@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cardview_borders">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:orientation="horizontal"
+        android:id="@+id/Item_CartRv_RootLayout"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        >
+    <ImageView
+        android:layout_width="@dimen/item_cart_recycleview_iv"
+        android:id="@+id/Item_CartRv_ItemPicIv"
+        android:layout_height="@dimen/item_cart_recycleview_iv"
+        android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/dimen_S">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_MMM"
+                android:id="@+id/Item_CartRv_ItemTitleTv"
+                android:text=""
+                android:textStyle="bold"
+                android:textDirection="ltr"
+                android:textSize="@dimen/txt_size_mmm"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_MMM">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity_txt"
+                    android:layout_marginEnd="@dimen/dimen_MMM"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:layout_weight="0.10"
+                    android:padding="@dimen/dimen_S"
+                    android:id="@+id/Item_CartRv_DecreaseQuant_IV"
+                    android:src="@drawable/ic_drop_quantity"/>
+
+
+                <EditText
+                    android:layout_width="@dimen/dimen_H"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_S"
+                    android:layout_marginEnd="@dimen/dimen_S"
+                    android:textAlignment="center"
+                    android:background="@drawable/gray_borders"
+                    android:layout_weight="0"
+                    android:id="@+id/Item_CartRv_EnterQuan_Et"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_S"
+                    android:layout_weight="0.10"
+                    android:background="@color/colorAccent"
+                    android:id="@+id/Item_CartRv_IncreaseQuant_IV"
+                    android:src="@drawable/ic_add_quantity"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MM"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_txt"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_L"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Item_CartRv_ItemPriceTv"/>
+        </LinearLayout>
+    </LinearLayout>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@android:color/darker_gray"
+       android:layout_below="@id/Item_CartRv_RootLayout"
+       android:layout_marginTop="@dimen/dimen_MM"
+       android:textDirection="ltr"
+       android:text="@string/total_price"
+       android:id="@+id/Item_CartRv_TotalPriceTv"
+       android:textStyle="bold"
+       android:paddingStart="@dimen/dimen_MMM"
+       android:padding="@dimen/dimen_S"/>
+
+</RelativeLayout>

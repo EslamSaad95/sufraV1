@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/dimen_MM"
+            style="@style/TextInputLayout"
+            android:hint="@string/offer_name"
+           android:id="@+id/AddNewOfferFr_OfferNameTv">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/dimen_MM"
+            style="@style/TextInputLayout"
+            android:layout_height="@dimen/offer_textinput_height"
+            android:hint="@string/offer_details"
+            android:id="@+id/AddNewOfferFr_OfferDescrFr">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/dimen_MM"
+            style="@style/TextInputLayout"
+            android:hint="@string/price_txt"
+            android:id="@+id/AddNewOfferFr_PriceTv">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MM"
+            android:layout_marginEnd="@dimen/dimen_MM"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_XL"
+                android:hint="@string/start_at"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_callender"
+                android:paddingStart="@dimen/dimen_MMM"
+                android:paddingEnd="@dimen/dimen_MMM"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/dimen_MM"
+                android:id="@+id/AddNewOfferFr_OffeDateFromTv"
+                android:background="@drawable/white_rectangle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_XL"
+                android:hint="@string/endat"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_callender"
+                android:paddingStart="@dimen/dimen_MMM"
+                android:paddingEnd="@dimen/dimen_MMM"
+                android:id="@+id/AddNewOfferFr_OffeDateToTv"
+                android:background="@drawable/white_rectangle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/dimen_MM"
+            android:layout_marginEnd="@dimen/dimen_MM"
+            android:layout_marginTop="@dimen/dimen_L">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="@string/add_picture_for_offer"/>
+
+            <ImageView
+                android:layout_width="@dimen/dimen_XXXL"
+                android:layout_height="@dimen/dimen_XXXL"
+                android:background="@android:color/darker_gray"
+                android:scaleType="center"
+                android:id="@+id/AddNewOfferFr_OfferPicIv"
+                android:layout_marginStart="@dimen/dimen_MM"
+                android:src="@drawable/ic_storepicture"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/GreenButton"
+            android:text="@string/add"
+            android:layout_marginTop="@dimen/dimen_XXXL"
+            android:id="@+id/AddNewOfferFr_AddOfferBtn"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

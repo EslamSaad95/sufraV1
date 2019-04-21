@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/dimen_MM"
+    android:layout_marginTop="@dimen/dimen_MMM"
+    android:background="@drawable/cardview_borders"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="@dimen/dimen_HH"
+        android:id="@+id/Item_UserRequestsFr_RequestImageIv"
+        android:layout_alignParentStart="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/Item_UserRequestsFr_RequestImageIv"
+        android:layout_marginStart="@dimen/dimen_MMM">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Bufflo burger"
+            android:id="@+id/Item_UserRequestsFr_RestaurantNameTv"
+            android:textSize="@dimen/txt_size_mmm"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:textSize="@dimen/txt_size_ss"
+            android:layout_marginTop="@dimen/dimen_SS"
+            android:id="@+id/Item_UserRequestsFr_PriceTv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery :"
+            android:textSize="@dimen/txt_size_ss"
+            android:layout_marginTop="@dimen/dimen_SS"
+            android:id="@+id/Item_UserRequestsFr_DeliveryTv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total :"
+            android:textSize="@dimen/txt_size_ss"
+            android:layout_marginBottom="@dimen/dimen_MM"
+            android:layout_marginTop="@dimen/dimen_SS"
+            android:id="@+id/Item_UserRequestsFr_TotalTv"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/requestnum"
+        android:textSize="@dimen/txt_size_s"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_M"
+        android:id="@+id/Item_UserRequestsFr_RequestNumbTv"
+        android:layout_marginTop="@dimen/dimen_MMM"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Item_UserRequestsFr_BtnLayout"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_below="@id/Item_UserRequestsFr_RequestNumbTv">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="@dimen/dimen_M"
+            style="@style/GreenButton"
+            android:textSize="@dimen/txt_size_sss"
+            android:padding="@dimen/dimen_S"
+            android:drawableEnd="@drawable/ic_like"
+            android:id="@+id/Item_UserRequestsFr_AcceptBtn"
+            android:text="@string/accept"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="@dimen/dimen_M"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_sss"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:id="@+id/Item_UserRequestsFr_RefuseBtn"
+            android:text="@string/refuse"/>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

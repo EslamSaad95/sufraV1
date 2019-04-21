@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RequestFood.Fragment.RestaurantDetailsCycle.AboutRestaurant">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/dimen_MMM"
+       android:layout_marginStart="@dimen/dimen_MM"
+       android:layout_marginEnd="@dimen/dimen_MM"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:text="@string/res_status"
+               android:textStyle="bold"
+               />
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="20dp"
+               android:text=""
+               android:textSize="@dimen/txt_size_mmm"
+               android:background="@null"
+               android:layout_weight="1"
+               android:id="@+id/AboutRestaurantFr_AvailabiltyTv"
+               />
+           <Switch
+               android:layout_width="@dimen/dimen_MM"
+               android:layout_height="wrap_content"
+               android:id="@+id/AboutRestaurantFr_Switch"
+               android:layout_marginEnd="@dimen/dimen_MM"
+               android:thumbTint="@android:color/holo_blue_light"
+               android:layout_weight="0.8"/>
+
+       </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:layout_marginTop="@dimen/dimen_MMM"
+           android:background="@color/gray"></View>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="24dp"
+           android:layout_marginTop="@dimen/dimen_S"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:text="@string/res_city"
+               android:textStyle="bold"
+               />
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="20dp"
+               android:textSize="@dimen/txt_size_mmm"
+               android:gravity="center"
+               android:textDirection="ltr"
+               android:background="@null"
+               android:id="@+id/AboutRestaurantFr_CityTv">
+           </EditText>
+
+       </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:layout_marginTop="@dimen/dimen_MMM"
+           android:background="@color/gray"></View>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/dimen_S"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:text="@string/res_region"
+               android:textStyle="bold"
+               />
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="20dp"
+               android:textDirection="ltr"
+               android:textSize="@dimen/txt_size_mmm"
+               android:gravity="center"
+               android:background="@null"
+               android:id="@+id/AboutRestaurantFr_RegionTv"/>
+
+       </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:layout_marginTop="@dimen/dimen_MMM"
+           android:background="@color/gray"></View>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/dimen_S"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:text="@string/res_minimum_charger"
+               android:textStyle="bold"
+               />
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="20dp"
+                android:background="@null"
+               android:textSize="@dimen/txt_size_mmm"
+               android:gravity="center"
+               android:id="@+id/AboutRestaurantFr_MinimumChargerTv"/>
+
+       </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:layout_marginTop="@dimen/dimen_MMM"
+           android:background="@color/gray"></View>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/dimen_S"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:text="@string/res_delivery_cost"
+               android:textStyle="bold"
+               />
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="20dp"
+               android:background="@null"
+               android:gravity="center"
+               android:textSize="@dimen/txt_size_mmm"
+
+               android:id="@+id/AboutRestaurantFr_DeliveryCostTv"/>
+
+       </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:layout_marginTop="@dimen/dimen_MMM"
+           android:background="@color/gray"></View>
+
+
+
+   </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        style="@style/GreenButton"
+        android:text="Save"
+        android:id="@+id/AboutRestaurantFr_SaveBtn"
+        android:layout_marginBottom="@dimen/dimen_MM"
+        />
+
+</RelativeLayout>

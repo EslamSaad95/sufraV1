@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RequestFood.Fragment.CartCycle.ItemsCart">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/ItemsCartFr_Rv">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="@dimen/dimen_MM"
+        android:padding="@dimen/dimen_MMM"
+        android:layout_above="@id/ItemsCart_BtnLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Total Price :"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ItemsCartFr_TotalPriceTv"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ItemsCart_BtnLayout"
+        android:layout_marginBottom="@dimen/dimen_M"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ItemsCartFr_ConfirmRequestBtn"
+            style="@style/GreenButton"
+            android:layout_weight="1"
+            android:text="Confirm Order"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/YellowBtn"
+            android:text="add more"
+            android:layout_weight="1"
+            android:id="@+id/ItemsCartFr_AddMoreBtn"/>
+    </LinearLayout>
+</RelativeLayout>

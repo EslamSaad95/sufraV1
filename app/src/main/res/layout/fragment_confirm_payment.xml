@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RequestFood.Fragment.CartCycle.ConfirmPayment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginStart="@dimen/dimen_MM"
+       android:layout_marginEnd="@dimen/dimen_MM"
+       android:layout_marginTop="@dimen/dimen_M">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/notes"
+          android:textStyle="bold"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="160dp"
+          android:layout_marginTop="@dimen/dimen_MMM"
+          android:text=""
+          android:background="@drawable/cardview_borders"
+          android:id="@+id/ConfirmPaymentFr_NotesEt"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/delivery_address"
+          android:textStyle="bold"
+          android:layout_marginTop="@dimen/dimen_MM"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:id="@+id/ConfirmPaymentFr_DeliveryAddressEt"
+          android:background="@null"
+          android:textSize="@dimen/txt_size_mmm"
+          android:text=""
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/payment"
+          android:layout_marginTop="@dimen/dimen_M"
+          android:textStyle="bold"/>
+
+         <RadioGroup
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:id="@+id/ConfirmPaymentFr_PaymentRadioGroup"
+             android:layout_height="wrap_content">
+
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:text=""
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:id="@+id/ConfirmPaymentFr_CashRBtn"/>
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=""
+             android:layout_weight="1"
+             android:id="@+id/ConfirmPaymentFr_NetworkpaymentRbtn"/>
+         </RadioGroup>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="@dimen/dimen_XL"
+          android:background="@color/gray"
+          >
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Total   :"
+             android:layout_weight="1"
+             android:textStyle="bold"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=""
+             android:id="@+id/ConfirmPaymentFr_TotalTv"
+             android:textStyle="bold"
+             />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="@dimen/dimen_MMM"
+          android:background="@color/gray"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Delivery Tax     :"
+             android:layout_weight="1"
+             android:textStyle="bold"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=""
+             android:id="@+id/ConfirmPaymentFr_DeliveryTaxTv"
+             android:textStyle="bold"
+             />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="@dimen/dimen_MMM"
+          android:background="@android:color/darker_gray"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Total Price  :"
+             android:layout_weight="1"
+             android:textStyle="bold"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=""
+             android:id="@+id/ConfirmPaymentFr_TotalPriceTv"
+             android:textStyle="bold"
+             />
+      </LinearLayout>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dimen_XL"
+          style="@style/YellowBtn"
+          android:id="@+id/ConfirmPaymentFr_ConfirmPaymentBtn"
+          android:layout_marginTop="@dimen/dimen_M"
+          android:text="@string/confirm_payment"/>
+
+
+   </LinearLayout>
+
+</RelativeLayout>

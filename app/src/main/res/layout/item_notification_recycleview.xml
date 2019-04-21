@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/gray_borders"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dimen_MMM"
+        android:layout_marginBottom="@dimen/dimen_MMM"
+        android:layout_marginEnd="@dimen/dimen_MMM"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_MM"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_notification"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dimen_S"
+                android:id="@+id/Item_NotificationRv_TitleTv"
+                android:layout_height="wrap_content"
+                android:text="the notification title"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_S">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_MM"
+                    android:src="@drawable/ic_callender"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Item_NotificationRv_DateTv"
+                    android:text="13 nov 2018"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_MM"
+                    android:layout_height="@dimen/dimen_MM"
+                    android:src="@drawable/ic_clock"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Item_NotificationRv_TimeTv"
+                    android:text="10 pm"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

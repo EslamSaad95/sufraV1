@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashAtivity"
+    android:background="@drawable/background">
+
+   <ImageView
+       android:layout_width="@dimen/dimen_logo_width"
+       android:layout_height="@dimen/dimen_logo_height"
+       android:id="@+id/splash_logo_iv"
+       android:layout_centerHorizontal="true"
+        android:layout_above="@id/splash_txt_tv"
+       android:src="@drawable/ic_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/splash_txt_tv"
+        android:layout_marginTop="@dimen/dimen_M"
+        android:text="@string/SplashAct_DescriptionTxt"
+        style="@style/WhiteText"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_XL"
+        android:id="@+id/splash_RequestFood_btn"
+        style="@style/YellowBtn"
+        android:layout_below="@id/splash_txt_tv"
+        android:layout_marginTop="@dimen/dimen_XXL"
+        android:text="@string/splashact_requestfood_txt"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_XL"
+        android:layout_below="@id/splash_RequestFood_btn"
+        style="@style/YellowBtn"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:text="@string/splashact_sellfood_txt"
+
+        android:id="@+id/splash_SellFood_btn"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatbtn_Layout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/splash_SellFood_btn"
+        android:layout_marginTop="@dimen/dimen_L"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dimen_L"
+            android:layout_height="@dimen/dimen_L"
+            android:src="@drawable/ic_twiiter"
+            android:id="@+id/splash_Twitterlogo_iv"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dimen_L"
+            android:layout_height="@dimen/dimen_L"
+            android:layout_marginEnd="@dimen/dimen_MMM"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:id="@+id/splash_Instagramlogo_iv"
+            android:src="@drawable/ic_instagram"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_MM"
+        style="@style/WhiteText"
+        android:gravity="center"
+        android:text="@string/splashact_rights_txt"/>
+
+</RelativeLayout>

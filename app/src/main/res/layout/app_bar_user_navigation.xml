@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RequestFood.activity.UserNavigationActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            >
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_marginStart="@dimen/dimen_L"
+                android:layout_height="wrap_content"
+              android:layout_toStartOf="@id/ToolBar_NotificationIv"
+                android:id="@+id/ToolbarTitle"
+                android:textSize="@dimen/txt_size_mmm"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/dimen_L"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:text=""/>
+
+            <ImageView
+                android:layout_width="@dimen/dimen_M"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_toStartOf="@id/Toolbar_ArrowIv"
+                android:layout_marginEnd="@dimen/dimen_M"
+                android:id="@+id/ToolBar_NotificationIv"
+                android:src="@drawable/ic_cart"/>
+            <RelativeLayout
+                android:layout_width="@dimen/dimen_M"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/Toolbar_ArrowIv"
+                android:layout_marginEnd="@dimen/dimen_MM">
+                <ImageView
+                    android:layout_width="@dimen/dimen_MM"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_arrow"
+                   />
+            </RelativeLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_user_navigation" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dimen_MMM"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/EditInfoFr_PicLayout">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:id="@+id/EditInfoFr_PicIv"
+            android:background="@drawable/cardview_borders"
+            android:src="@drawable/ic_person"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_L"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dimen_MM"
+            android:id="@+id/EditInfoFr_AddPicTv"
+            android:paddingStart="@dimen/dimen_MM"
+            android:background="@drawable/cardview_borders"
+            android:layout_marginStart="@dimen/dimen_MM"
+            android:layout_marginEnd="@dimen/dimen_MM"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_add"
+            android:drawablePadding="@dimen/dimen_MMM"
+            android:textSize="@dimen/txt_size_mmm"
+            android:text="Add Pic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/EditInfoFr_PicLayout"
+        android:layout_marginTop="@dimen/dimen_MMM"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:hint="Name"
+            android:id="@+id/EditInfoFr_NameEt"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:hint="Email"
+            android:id="@+id/EditInfoFr_EmailEt"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:hint="Phone"
+            android:id="@+id/EditInfoFr_PhoneEt"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+        <RelativeLayout
+            style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:id="@+id/EditInfoFr_CitySp_Layout"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_XXL"
+                android:id="@+id/EditInfoFr_CitySp"></Spinner>
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:id="@+id/EditInfoFr_RegionSp_Layout"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_XXL"
+                android:id="@+id/EditInfoFr_RegionSp"></Spinner>
+        </RelativeLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:layout_height="@dimen/dimen_H"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:hint="Address Description"
+            android:id="@+id/EditInfoFr_HomeAddressDescrEt"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:hint="Password"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:id="@+id/EditInfoFr_PasswordEt"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:hint="Repeat Password"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:id="@+id/EditInfoFr_RepeatPassEt"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@null"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/GreenButton"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:text="Edit"
+            android:id="@+id/EditInfoFr_EditBtn"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

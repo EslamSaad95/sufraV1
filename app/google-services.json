@@ -1,0 +1,151 @@
+{
+  "project_info": {
+    "project_number": "353887440616",
+    "firebase_url": "https://sofra-b9916.firebaseio.com",
+    "project_id": "sofra-b9916",
+    "storage_bucket": "sofra-b9916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353887440616:android:f038c6405e713d1d",
+        "android_client_info": {
+          "package_name": "com.example.abdelrahmansaleh.sofra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353887440616-75gbq74grm8a660h95eh1mbhb2v8ut2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abdelrahmansaleh.sofra",
+            "certificate_hash": "c1b9b487f47a0554b0d549b554c3c2fa8ca4e0b0"
+          }
+        },
+        {
+          "client_id": "353887440616-dbgg9r3voav6bcfsjuhdqg19c270a7dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI5vK_f5eYvU3IPb0HYVGUAAWvLzejTnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353887440616-dbgg9r3voav6bcfsjuhdqg19c270a7dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353887440616:android:a9ef18ef0db7ef56",
+        "android_client_info": {
+          "package_name": "com.example.laptophome.sufra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353887440616-dbgg9r3voav6bcfsjuhdqg19c270a7dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI5vK_f5eYvU3IPb0HYVGUAAWvLzejTnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353887440616-dbgg9r3voav6bcfsjuhdqg19c270a7dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353887440616:android:d308364c98fe0b4b",
+        "android_client_info": {
+          "package_name": "com.example.sofra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353887440616-j6kru73jq4bqkb4hqbqr6l70cvj679bc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sofra",
+            "certificate_hash": "29e83652b7a0aaa84c8961be5edda63d35bf2236"
+          }
+        },
+        {
+          "client_id": "353887440616-dbgg9r3voav6bcfsjuhdqg19c270a7dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI5vK_f5eYvU3IPb0HYVGUAAWvLzejTnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353887440616-dbgg9r3voav6bcfsjuhdqg19c270a7dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353887440616:android:82227fbcddaf9028",
+        "android_client_info": {
+          "package_name": "com.example.sofra_app_kh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353887440616-2cpf10qvqpkvr6thpl4ca6s7t8b2q166.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sofra_app_kh",
+            "certificate_hash": "70e7fddaece32907a0716a02dbb35ddab0c6fa86"
+          }
+        },
+        {
+          "client_id": "353887440616-dbgg9r3voav6bcfsjuhdqg19c270a7dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI5vK_f5eYvU3IPb0HYVGUAAWvLzejTnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353887440616-dbgg9r3voav6bcfsjuhdqg19c270a7dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

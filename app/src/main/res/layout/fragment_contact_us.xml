@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SellingFood.fragment.RestaurantNavigationCycle.ContactUs">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dimen_MM">
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/TextInputLayout"
+        android:id="@+id/ContactUsFr_NameEt"
+        android:hint="@string/full_name">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        style="@style/TextInputLayout"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:id="@+id/ContactUsFr_EmailEt"
+        android:hint="@string/e_mail">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textEmailAddress"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        style="@style/TextInputLayout"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:id="@+id/ContactUsFr_PhoneEt"
+        android:hint="@string/phone_number">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="phone"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        style="@style/TextInputLayout"
+        android:layout_height="130dp"
+        android:id="@+id/ContactUsFr_MessageContentEt"
+        android:layout_marginTop="@dimen/dimen_MM">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="@dimen/dimen_MM"
+       android:layout_marginStart="@dimen/dimen_MM"
+       android:layout_marginEnd="@dimen/dimen_MM">
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/ContactUFr_RadioGroup">
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="suggestion"
+               android:layout_weight="1"
+               android:id="@+id/suggestionRadioBtn"/>
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="complaint"
+               android:layout_weight="1"
+               android:id="@+id/complaintRadioBtn"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="inquiry"
+               android:layout_weight="1"
+               android:id="@+id/inquiryRadioBtn"/>
+       </RadioGroup>
+   </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_XL"
+        android:layout_marginTop="@dimen/dimen_MM"
+        style="@style/GreenButton"
+        android:text="Send"
+        android:id="@+id/ContactUsFr_SendBtn"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_L"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Follow us  : "/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_twiiter"
+            android:layout_marginEnd="@dimen/dimen_S"
+            android:layout_marginStart="@dimen/dimen_S"
+            android:id="@+id/ContactUsFr_TwitterIv"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_instagram"
+            android:layout_marginStart="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_S"
+            android:id="@+id/ContactUsFr_InstagramIv"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_S"
+            android:layout_marginEnd="@dimen/dimen_S"
+            android:src="@drawable/ic_facebook"
+            android:id="@+id/ContactUsFr_FacebookIv"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

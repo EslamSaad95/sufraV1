@@ -1,0 +1,42 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dimen_SSS">1dp</dimen>
+    <dimen name="dimen_SS">2dp</dimen>
+    <dimen name="dimen_S">4dp</dimen>
+    <dimen name="dimen_MMM">8dp</dimen>
+    <dimen name="dimen_MM">16dp</dimen>
+    <dimen name="dimen_M">24dp</dimen>
+    <dimen name="dimen_L">32dp</dimen>
+    <dimen name="dimen_XL">40dp</dimen>
+    <dimen name="dimen_XXL">48dp</dimen>
+    <dimen name="dimen_XXXL">56dp</dimen>
+    <dimen name="dimen_HHH">64dp</dimen>
+    <dimen name="dimen_HH">72dp</dimen>
+    <dimen name="dimen_H">80dp</dimen>
+
+
+    <dimen name="txt_size_sss">8sp</dimen>
+    <dimen name="txt_size_ss">10sp</dimen>
+    <dimen name="txt_size_s">12sp</dimen>
+    <dimen name="txt_size_mmm">16sp</dimen>
+    <dimen name="txt_size_mm">20sp</dimen>
+    <dimen name="txt_size_m">24sp</dimen>
+    <dimen name="txt_size_l">28sp</dimen>
+    <dimen name="txt_size_xl">32sp</dimen>
+    <dimen name="txt_size_xxl">36sp</dimen>
+    //===============================================================
+    <dimen name="dimen_logo_width">200dp</dimen>
+    <dimen name="dimen_logo_height">200dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="menu_itemdetails_widthTv">130dp</dimen>
+
+    //==============================================================
+
+    <dimen name="CurrentRequestBtn_Width">150dp</dimen>
+    <dimen name="item_cart_recycleview_iv">90dp</dimen>
+    <dimen name="offer_textinput_height">120dp</dimen>
+</resources>

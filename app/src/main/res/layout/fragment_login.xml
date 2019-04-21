@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginfr_pleaselogin_txt"
+        android:drawableStart="@drawable/ic_person_yellow"
+        android:id="@+id/LoginFr_HeaderTv"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_XL"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/TextInputLayout"
+        android:layout_below="@id/LoginFr_HeaderTv"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:hint="@string/e_mail"
+        android:id="@+id/LoginFr_MailEt"
+        >
+
+        <EditText
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/TextInputLayout"
+        android:layout_below="@id/LoginFr_MailEt"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:hint="@string/password"
+        android:id="@+id/LoginFr_PasswordEt"
+        >
+
+        <EditText
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_XL"
+        android:id="@+id/LoginFr_LoginBtn"
+        android:text="@string/login_txt"
+        android:layout_below="@id/LoginFr_PasswordEt"
+        android:layout_marginTop="@dimen/dimen_MM"
+        style="@style/GreenButton"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foreget_password"
+        android:id="@+id/LoginFr_ForgetPasswordTv"
+        android:layout_below="@id/LoginFr_LoginBtn"
+        android:layout_marginTop="@dimen/dimen_XL"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue"
+        android:layout_centerInParent="true"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_XL"
+        android:layout_marginTop="@dimen/dimen_M"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:text="@string/new_account"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/LoginFr_ForgetPasswordTv"
+        android:id="@+id/LoignFr_RegisterBtn"/>
+
+</RelativeLayout>

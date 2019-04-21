@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/nav_myrequest"
+        android:icon="@drawable/ic_nav_myproducts"
+        android:title="@string/nav_myrequests" />
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/ic_nav_requestsbmitted"
+        android:title="@string/nav_notification" />
+    <item
+        android:id="@+id/nav_newoffers"
+        android:icon="@drawable/ic_nav_myoffers"
+        android:title="@string/nav_newoffers" />
+    <item
+        android:id="@+id/nav_aboutapp"
+        android:icon="@drawable/ic_nav_aboutapp"
+        android:title="@string/nav_about_app" />
+
+    <item
+        android:id="@+id/nav_rules"
+        android:icon="@drawable/ic_nav_rules"
+        android:title="@string/nav_rules"></item>
+    <item
+        android:id="@+id/nav_shareapp"
+        android:icon="@drawable/ic_nav_shareapp"
+        android:title="@string/nav_share_app"></item>
+    <item
+        android:id="@+id/nav_contactus"
+        android:icon="@drawable/ic_nav_contact_us"
+        android:title="@string/nav_contact_us"></item>
+    <item
+        android:id="@+id/nav_signout"
+        android:icon="@drawable/ic_sign_out"
+        android:title="@string/nav_signout"></item>
+
+
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SellingFood.fragment.RestaurantNavigationCycle.RestaurantProducts.AddNewItem">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_M"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:id="@+id/AddNewItemFr_productNameTv"
+            android:hint="@string/product_name"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:layout_height="100dp"
+            android:id="@+id/AddNewItemFr_productDetailsTv"
+            android:hint="@string/description"
+            android:layout_marginTop="@dimen/dimen_MM"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:id="@+id/AddNewItemFr_productPriceTv"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:hint="@string/price_txt"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="numberDecimal|number"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:id="@+id/AddNewItemFr_PreParationTimeTv"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:hint="@string/preparation_time"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number|numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_M"
+            android:layout_marginStart="@dimen/dimen_MM"
+            android:layout_marginEnd="@dimen/dimen_MM">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/txt_size_mmm"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/add_product_image"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/AddNewItemFr_ProductPicIv"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/dimen_MM"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:layout_centerVertical="true"
+                android:background="@android:color/darker_gray"
+                android:src="@drawable/ic_storepicture"
+
+
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/GreenButton"
+            android:id="@+id/AddNewItemFr_AddBtn"
+            android:layout_marginTop="@dimen/dimen_H"
+            android:text="@string/add"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

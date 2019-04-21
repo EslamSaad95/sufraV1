@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SellingFood.fragment.RestaurantCycle.RestaurantRegisterFragment2">
+
+    <LinearLayout
+        android:id="@+id/RestaurantRegister2_InputRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RestaurantRegister2_CategotySpLayout"
+            style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MM">
+
+            <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                android:id="@+id/RestaurantRegister2_CategorySp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_XL"></io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/RestaurantRegister2_MinimumRequestEt"
+            style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:hint="Minimum Request">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/RestaurantRegister2_DeliveryFeeEt"
+            style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:hint="Delivery Fee">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/RestaurantRegister2_CommunicationCb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_MM"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:layout_marginEnd="@dimen/dimen_MM"
+            android:text="Communication Data" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/RestaurantRegister2_PhoneEt"
+                style="@style/TextInputLayout"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:hint="Phone Number">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/RestaurantRegister2_WhatsappEt"
+                style="@style/TextInputLayout"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:hint="Whatsapp Number">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RestaurantRegister2_InputRootLayout"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginTop="@dimen/dimen_L"
+        android:layout_marginEnd="@dimen/dimen_MM">
+
+        <TextView
+            android:id="@+id/RestaurantRegister2_StorePicTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Store Picture" />
+
+        <RelativeLayout
+            android:id="@+id/RestaurantRegister2_StorePicIv_Layout"
+            android:layout_width="@dimen/dimen_XXL"
+            android:layout_height="@dimen/dimen_XXL"
+            android:layout_marginStart="@dimen/dimen_MM"
+            android:layout_marginEnd="@dimen/dimen_MM"
+            android:layout_toEndOf="@id/RestaurantRegister2_StorePicTv"
+            >
+
+            <ImageView
+                android:id="@+id/RestaurantRegister2_StorePicIv"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:layout_centerVertical="true"
+                android:background="@android:color/darker_gray"
+                android:src="@drawable/ic_storepicture"
+
+
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/RestaurantRegister2_RegisterBtn"
+        style="@style/GreenButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_L"
+        android:text="Register" />
+
+
+</RelativeLayout>

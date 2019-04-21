@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SellingFood.fragment.RestaurantNavigationCycle.RestaurantOffers.RestaurantOffers">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RestaurantOffersFr_RV"
+        android:layout_margin="@dimen/dimen_MM"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_XL"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_MM"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:text="@string/add_new_offer"
+        android:drawableEnd="@drawable/ic_additem"
+        android:paddingEnd="@dimen/dimen_H"
+        android:paddingStart="@dimen/dimen_H"
+        android:id="@+id/RestaurantOfferFr_AddNewOffersBtn"/>
+</RelativeLayout>

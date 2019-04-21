@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SellingFood.fragment.RestaurantCycle.RestaurantRegisterFragment1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/RestaurantRegisterFr_InputRootLayout">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:id="@+id/RestaurantRegister_StoreNameEt"
+            android:hint="@string/restaurant_name">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+           style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:id="@+id/RestaurantRegister_CitySp_Layout"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_XXL"
+                android:id="@+id/RestaurantRegisterFr_CitySp"></Spinner>
+        </RelativeLayout>
+        <RelativeLayout
+           style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:id="@+id/RestaurantRegister_RegionSp_Layout"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_XXL"
+                android:id="@+id/RestaurantRegisterFr_RegionSp"></Spinner>
+        </RelativeLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/RestaurantRegister_EmailEt"
+            style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:hint="@string/e_mail">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/RestaurantRegister_PasswordEt"
+            style="@style/TextInputLayout"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:hint="@string/password">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/dimen_M"
+            android:hint="Repeat Password"
+            android:id="@+id/RestaurantRegister_RepeatPasswordEt"
+            style="@style/TextInputLayout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_XL"
+        style="@style/GreenButton"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/RestaurantRegister_ContinureBtn"
+        android:layout_marginBottom="@dimen/dimen_XL"
+        android:text="@string/continue_txt"/>
+
+
+
+</RelativeLayout>

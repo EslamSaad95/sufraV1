@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RequestFood.Fragment.RestaurantDetailsCycle.Restaurant_MenuItem_Details">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dimen_XXL"
+        android:layout_marginEnd="@dimen/dimen_XXL"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:layout_alignParentTop="true"
+        android:id="@+id/MenuItemFr_ItemPicIv"
+        android:layout_height="140dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/MenuItemFr_ItemPicIv"
+        android:layout_marginStart="@dimen/dimen_MM"
+        android:layout_marginEnd="@dimen/dimen_MM"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:id="@+id/MenuItemFr_ItemTitlteTv"
+            android:text="Titlte"
+            android:textStyle="bold"
+            android:textDirection="ltr"
+            android:textSize="@dimen/txt_size_mmm"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="@dimen/dimen_MM">
+
+           <TextView
+               android:layout_width="240dp"
+               android:layout_height="wrap_content"
+               android:layout_alignParentStart="true"
+               android:text="cfdnfdknfjdnfjdnfjndjfnjdnjfnjdfnfnjdfnff"
+               android:id="@+id/MenuItemFr_ItemDetailsTv"
+               android:textDirection="ltr"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Price"
+               android:textStyle="bold"
+               android:layout_marginEnd="@dimen/dimen_MMM"
+               android:id="@+id/MenuItemFr_PriceTxt"
+               android:layout_alignParentEnd="true"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/MenuItemFr_PriceTxt"
+               android:layout_alignParentEnd="true"
+               android:id="@+id/MenuItemFr_ItemPriceTv"
+               android:textStyle="bold"
+               android:text="20 S.A"/>
+       </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MenuItemFr_ItemPeriodTv"
+            android:text="Order Preparation Time"
+            android:layout_marginTop="@dimen/dimen_MM"
+            android:layout_marginBottom="@dimen/dimen_MM"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Special Order"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_MMM"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:background="@drawable/gray_borders"
+            android:id="@+id/MenuItemFr_SpecialOrderEt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_MM"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:layout_marginEnd="@dimen/dimen_M"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:layout_weight="0.10"
+                android:padding="@dimen/dimen_S"
+                android:id="@+id/MenuItemFr_DecreaseQuant_IV"
+                android:src="@drawable/ic_drop_quantity"/>
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_MM"
+                android:layout_marginEnd="@dimen/dimen_MM"
+                android:textAlignment="center"
+                android:background="@drawable/gray_borders"
+                android:layout_weight="0.50"
+                android:id="@+id/MenuItemFr_EnterQuan_Et"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_S"
+                android:layout_weight="0.10"
+                android:background="@color/colorAccent"
+                android:id="@+id/MenuItemFr_IncreaseQuant_IV"
+                android:src="@drawable/ic_add_quantity"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_M"
+            style="@style/YellowBtn"
+            android:text="add to Cart"
+            android:drawableEnd="@drawable/ic_cart"
+            android:paddingEnd="@dimen/dimen_H"
+            android:id="@+id/MenuItemFr_AddtoCartBtn"
+            android:paddingStart="@dimen/dimen_H"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

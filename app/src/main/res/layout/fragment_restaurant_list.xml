@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.RequestFood.Fragment.RestaurantDetailsCycle.RestaurantList">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_XXL"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="@dimen/dimen_S"
+    android:visibility="gone"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/RestaurantListFr_SearchBarLayout">
+
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_XXL"
+        android:id="@+id/RestaurantListFr_CitySp"
+        android:layout_weight="0.5"
+
+        ></Spinner>
+
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_XXL"
+        android:id="@+id/RestaurantListFr_Searchview"
+        android:layout_weight="1"
+        app:queryHint="search"
+        android:textDirection="ltr"
+        android:layoutDirection="rtl"
+
+
+        ></android.support.v7.widget.SearchView>
+</LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/RestaurantListFr_SearchBarLayout"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:id="@+id/RestaurantListFr_RestaurantListRv"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

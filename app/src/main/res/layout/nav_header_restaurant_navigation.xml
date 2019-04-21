@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:gravity="center"
+    android:paddingTop="@dimen/dimen_MM"
+    android:paddingStart="@dimen/dimen_MM"
+    android:paddingEnd="@dimen/dimen_MM"
+    android:background="@color/colorPrimaryDark"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_XXXL"
+        android:layout_height="@dimen/dimen_XXXL"
+        android:id="@+id/restaurant_header_imageView"
+        android:background="@drawable/circle">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/Restaurant_Nav_Header_ProfilepicIv"
+        android:background="@drawable/circle"
+        android:src="@drawable/ic_person" />
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        style="@style/WhiteText"
+        android:layout_marginTop="@dimen/dimen_MMM"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dimen_S"
+        android:layout_marginEnd="@dimen/dimen_S"
+        android:text="@string/welcome_"
+        />
+        <TextView
+           style="@style/WhiteText"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_MMM"
+            android:layout_marginStart="@dimen/dimen_MMM"
+            android:text="Welcome"
+            android:id="@+id/Restaurant_Nav_Heaer_UsernameTv"
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dimen_MM"
+        android:visibility="gone"
+        android:id="@+id/Restaurant_Nav_Header_SettingIv"
+        android:src="@drawable/ic_setting"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+</RelativeLayout>
